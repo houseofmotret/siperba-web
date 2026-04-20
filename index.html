@@ -266,7 +266,7 @@ tr:hover td{background:var(--gp)}
       <div class="fg"><label>Satker / Divisi</label>
         <select class="fi" id="rsatker">
           <option value="">-- Pilih Satker --</option>
-          <option>Kepala Sub Bagian Tata Usaha/Kepegawaian</option>
+          <option>Kepala Sub Bagian Tata Usaha</option>
           <option>Sub Bagian Tata Usaha/Kepegawaian</option>
           <option>Sub Bagian Tata Usaha/Keuangan</option>
           <option>Sub Bagian Tata Usaha/Humas</option>
@@ -570,7 +570,7 @@ const db_fs = getFirestore(app);
 // ══════ STATE ══════
 let db = {
   setting: {batasTgl:15, instansi:'Kantor Kementerian Agama Kabupaten/Kota', alamat:'Jl. Contoh No. 1, Kota, Provinsi'},
-  satkers: ['Sub Bagian Tata Usaha/Kepegawaian','Sub Bagian Tata Usaha/Keuangan','Sub Bagian Tata Usaha/Humas','Sub Bagian Tata Usaha/PTSP','Sub Bagian Tata Usaha/Penyuluh Agama Kristen','Sub Bagian Tata Usaha/Perencana','Pendidikan Madrasah','Pendidikan dan Keagamaan Islam','Bimbingan Masyarakat Islam','Zakat dan Wakaf'],
+  satkers: ['Kepala Sub Bagian Tata Usaha','Sub Bagian Tata Usaha/Kepegawaian','Sub Bagian Tata Usaha/Keuangan','Sub Bagian Tata Usaha/Humas','Sub Bagian Tata Usaha/PTSP','Sub Bagian Tata Usaha/Penyuluh Agama Kristen','Sub Bagian Tata Usaha/Perencana','Pendidikan Madrasah','Pendidikan dan Keagamaan Islam','Bimbingan Masyarakat Islam','Zakat dan Wakaf'],
   users: [], items: [], requests: [], basts: [], broadcasts: [],
   nReq:1, nUser:1, nItem:1, nBast:1, nBc:1,
 };
