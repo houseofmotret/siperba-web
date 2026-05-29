@@ -1278,7 +1278,7 @@ async function openBAST(){
   const n=String(allBasts.length+1).padStart(3,'0');
   const d=new Date(),br=String(d.getMonth()+1).padStart(2,'0'),yr=d.getFullYear();
   G('basttitle').textContent='📄 Buat BAST Baru';
-  S2('bastno',`      /Kk.06.11.01/KU.00/${br}/${yr}`);
+  S2('bastno',`B-      /Kk.06.11.01/KU.00/${br}/${yr}`);
   G('bastdate').value=d.toISOString().split('T')[0];
   S2('bastket',''); S2('bast-search',''); S2('bast-qty','1'); S2('bast-sat','');
   popSatker('bastsatker'); G('bastpenerima').innerHTML='<option value="">-- Pilih --</option>';
