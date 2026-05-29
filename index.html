@@ -827,8 +827,9 @@ async function doLogout() {
 }
 
 // ══════ APP ══════
-function startApp() {
+async function startApp() {
   hide('ls'); show('app');
+  await initDefaultData();
   updateSidebarUser(); buildNav(); navTo(defPage());
 }
 
@@ -1576,7 +1577,6 @@ onAuthStateChanged(auth, async (user) => {
 // ══════ INIT ══════
 (async () => {
   showLoading('Menghubungkan ke server...');
-  await initDefaultData();
   hideLoading();
 })();
 
